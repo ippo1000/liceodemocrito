@@ -1,22 +1,229 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>School Website</title>
+    <style> 
+
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 10px;
+      justify-content: center;
+    }
+    
+    /*
+   
+  
+    @media (min-width: 600px) {
+        .image-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+    }
+     */
+    
+    .image-box {
+      flex-basis: 50%; /*only take 50% of the width of the parent*/
+      margin: 16px;
+      text-align: center;
+    }
+    .image-box0 {
+      flex-basis: 50%; /*only take 50% of the width of the parent*/
+      margin: 16px;
+      text-align: center;
+    }
+  
+    
+    .image-box img {
+      background: white;
+      padding: 0px;
+      width: 300px;
+      height: 300px;
+      margin-top: 10px;
+      line-height: 400px;
+      color: white;
+      font-weight: lighter;
+      font-size: 5em;
+      text-align: center;
+      border: 2px solid black;
+    }
+    
+    .image-box0 img {
+      background: white;
+      padding: 0px;
+      width: 150px;
+      height: 30px;
+      color: white;
+      font-weight: lighter;
+      font-size: 5em;
+      text-align: center;
+    }
+  
+  
+    .time-clock {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 5px;
+      font-size: 20px;
+      color: white;
+      background-color: black;
+      width: max-content;
+      margin: auto;
+  }
+  
+  
+  
+  
+  
+    
+    .image-box button {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+    }
+  
+  
+    
+    
+  
+    .page-end {
+      display: flex;
+      justify-content: center;
+      font-size: 0.8em;
+      padding: 10px;
+      margin-top: 20px;
+  }
+  
+  .page-end02 {
+      display: flex;
+      justify-content: center;
+      font-size: 0.8em;
+      padding: 0px;
+      margin-top: 7px;
+  }
+  .subtitle {
+      font-family: 'Indie Flower', cursive;
+      color: #808080;
+      text-align: center;
+      font-size: 1.5em;
+      padding: 0px;
+      margin-top: -20px;
+  }
+  
+  .undertitle {
+      font-family: 'Covered By Your Grace', serif; 
+      color: #808080;
+      text-align: center;
+      font-size: 1.5em;
+      padding: 0px;
+      margin-top: 0px;
+  }
+  
+  h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      text-shadow: 2px 2px orangered;
+      letter-spacing: 2px;
+      color: #333;
+      text-align: center;
+  }
+  .undertitle0 {
+    font-family: 'Covered By Your Grace', serif; 
+    color: #808080;
+    text-align: center;
+    font-size: 1em;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+
+
+  </style>
+  
+    <title>My School Website</title>
+<!--T   <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Covered By Your Grace&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
   </head>
   <body>
-    <h1>Welcome to Our School!</h1>
-    <div>
-      <p>
-        Please select the page that you would like to visit:
-      </p>
-      <div style="display: flex; flex-direction: row;">
-        <a href="schoolInfo.html"><button>School Info</button></a>
-        <a href="staff.html"><button>Staff</button></a>
+    <h1>Benvenuti al Liceo Democrito!</h1>
+    <div class="subtitle">Ciao! Cosa vuoi fare oggi?</div>
+    <div class="image-box0">
+      <a href="https://www.twitch.tv/liceodemocritomedia">
+        <img src="Users/filippo/Dropbox/Filippo/Liceo Democrito/Redirection Website/media/img0.gif" alt="Page 1">
+      </a>
+      <div class="undertitle0">Liceo Democrito sta trasmettendo in live! </div>
+    </div>
+    <div class="image-grid">
+        <div class="image-box">
+          <a href="https://www.liceodemocrito.edu.it/">
+            <img src="media/img1.png" alt="Page 1">
+          </a>
+          <div class="undertitle">Sito della Scuola</div>
+        </div>
+          <div class="image-box">
+            <a href="https://www.liceodemocrito.edu.it/home/circolari/">
+              <img src="F:\Dropbox\Filippo\Liceo Democrito\Redirection Website\media\img1.png" alt="Page 1">
+            </a>
+            <div class="undertitle">Circolari</div>
+          </div>
+            <div class="image-box image-pair">
+              <a href="https://family.axioscloud.it/Secret/REStart.aspx?Customer_ID=97040180586">
+                <img src="F:\Dropbox\Filippo\Liceo Democrito\Redirection Website\media\img1.png" alt="Page 2">
+              </a>
+              <div class="undertitle">Registro Elettronico</div>
+            </div>
+          <div class="image-box">
+            <a href="https://www.instagram.com/liceodemocritoofficial/?hl=it">
+              <img src="F:\Dropbox\Filippo\Liceo Democrito\Redirection Website\media\img1.png" alt="Page 2">
+            </a>
+            <div class="undertitle">Instagram Ufficiale</div>
+          </div>
+        <div class="image-box">
+          <a href="https://www.instagram.com/utopia.democrito/?hl=it">
+            <img src="F:\Dropbox\Filippo\Liceo Democrito\Redirection Website\media\img1.png" alt="Page 2">
+          </a>
+          <div class="undertitle">Instagram Lista Utopia</div>
       </div>
-      <div style="display: flex; flex-direction: row;">
-        <a href="news.html"><button>News and Events</button></a>
-        <a href="contact.html"><button>Contact Us</button></a>
-      </div>
-      <div style="display: flex; flex-direction: row;">
-        <a href="programs.html"><button>Programs</button></a>
-        <a href="facilities.html"><button>Facilities</button></a>
-      </div>
+      <div class="image-box">
+        <a href="https://www.instagram.com/utopia.democrito/?hl=it">
+          <img src="F:\Dropbox\Filippo\Liceo Democrito\Redirection Website\media\img1.png" alt="Page 2">
+        </a>
+        <div class="undertitle">Instagram Lista Vola Alto</div>
+    </div>
+      <div class="image-box">
+        <a href="https://www.instagram.com/volaaltodemocrito/?hl=it">
+          <img src="F:\Dropbox\Filippo\Liceo Democrito\Redirection Website\media\img1.png" alt="Page 2">
+        </a>
+        <div class="undertitle">Merchandise</div>
+    </div>
+    <div class="image-box">
+        <a href="">
+          <img src="F:\Dropbox\Filippo\Liceo Democrito\Redirection Website\media\img1.png" alt="Page 2">
+        </a>
+        <div class="undertitle">Altre Informazioni</div>
+    </div>
+    <div class="image-box">
+      <a href="">
+        <img src="F:\Dropbox\Filippo\Liceo Democrito\Redirection Website\media\img1.png" alt="Page 2">
+      </a>
+      <div class="undertitle">Menu del bar!</div>
+  </div>
+    </div>
+
+
+
+
+  </div>
+  <div class="page-end">Sito NON Ufficiale gestito dai Rappresentanti di istituto in carica. Tecnologia a cura di IFCorp di FilippoT</div>
+  <div class="page-end02">Copyright ©2023 Liceo Democrito x IFCorp </div>
+  <div id="time-clock"></div>
+</body>
+</html>
